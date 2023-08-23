@@ -1,0 +1,18 @@
+{
+  "name": "CI-CD",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "FelipeLopes1996 <felipel.lima1996@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "rm -rf out && next export && mv ./out ./build",
+    "start": "next start",
+    "lint": "next lint"
+  }
+}
