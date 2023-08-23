@@ -6,7 +6,7 @@ on:
     #que acontecer apontado para a branch main
     branches: ["main"]
   pull_request:
-    branches: ["main"]
+    types: [opened, synchronize]
 
 # definindo o que queremos executar
 jobs:
