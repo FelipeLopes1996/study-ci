@@ -1,4 +1,4 @@
-name: "Ci (Integração Continua): Main Workflow"
+name: "CI (Integração Continua): Main Workflow"
 
 on:
   pull_request:
@@ -6,14 +6,10 @@ on:
 
 jobs:
   linter:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      # install commands
-      - name: Run Linter
+      - name: Run Installation
         run: yarn install
-
-      # run linter
       - name: Run Linter
         run: yarn lint
