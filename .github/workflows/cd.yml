@@ -14,11 +14,7 @@ jobs:
     runs-on: ubunto-latest
     steps:
       - uses: actions/checkout@v3
-
-      # install commands
-      - name: Run Installation
-        run: yarn install
-
-      # run linter
       - name: Run Deploy
-        run: yarn deploy:prod
+        run: |
+          yarn install
+          yarn deploy:prod
