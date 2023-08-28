@@ -1,5 +1,7 @@
-import React from "react";
-
-export default function sobre() {
-  return <div>sobre</div>;
+export default function AboutScreen() {
+  return (
+    <div>
+      <h1>Sobre</h1>
+    </div>
+  );
 }
