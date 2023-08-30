@@ -40,7 +40,9 @@ fetch(
   }
 )
   .then((response) => {
+    console.log("BATEU AQUI FORA DO IF");
     if (response.ok) return response.json();
+    console.log("BATEU AQUI IF");
     throw new Error(response.statusText);
   })
   .catch((err) => {
