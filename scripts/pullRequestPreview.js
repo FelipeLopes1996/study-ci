@@ -43,11 +43,11 @@ fetch(
     console.log("BATEU AQUI FORA DO IF");
     if (response.ok) return response.json();
     console.log("BATEU AQUI IF");
-    throw new Error(response.statusText);
+    // throw new Error(response.statusText);
   })
   .catch((err) => {
-    console.log("[COMMENT_ON_GITHUB: ERROR]");
-    throw new Error(err);
+    console.log("[COMMENT_ON_GITHUB: ERROR]", err);
+    // throw new Error(err);
   })
   .finally(() => {
     console.log("[COMMENT_ON_GITHUB: END]");
