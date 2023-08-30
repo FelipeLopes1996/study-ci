@@ -36,6 +36,7 @@ fetch(
     body: JSON.stringify({
       body: GH_COMMENT,
     }),
+    // eslint-disable-next-line prettier/prettier
   }
 )
   .then((response) => {
